@@ -61,7 +61,7 @@ pub fn Index() -> Html {
                             {"Bluesky"}
                         </LinkButton>
                         <LinkButton size=3 href="https://x.com/RustForWeb">
-                            {"Twitter"}
+                            {"X"}
                         </LinkButton>
                     </Flex>
                 </Card>
