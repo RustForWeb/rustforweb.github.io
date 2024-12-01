@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
     website-build:
-        name: Build Book
+        name: Build Website
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
