@@ -1,0 +1,24 @@
+[package]
+name = "rustforweb-website"
+description = "Rust For Web website."
+publish = false
+
+authors = ["Rust For Web <info@rustforweb.org>"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/RustForWeb/rustforweb.github.io"
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+console_log = "1.0.0"
+log = "0.4.22"
+radix-yew-icons = { git = "https://github.com/RustForWeb/radix.git" }
+radix-yew-themes = { git = "https://github.com/RustForWeb/radix.git" }
+yew = { version = "0.21.0", features = ["csr"] }
+yew-router = "0.18.0"
+yew-struct-component = "0.1.4"
+yew-style = "0.1.4"
+
+[patch.crates-io]
+yew = { git = "https://github.com/RustForWeb/yew.git", branch = "feature/use-composed-ref" }
+yew-router = { git = "https://github.com/RustForWeb/yew.git", branch = "feature/use-composed-ref" }

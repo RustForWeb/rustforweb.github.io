@@ -1,0 +1,16 @@
+{
+    "name": "@rustforweb/website",
+    "description": "Rust For Web website.",
+    "author": "Rust For Web <info@rustforweb.org>",
+    "repository": "github:RustForWeb/rustforweb.github.io",
+    "license": "MIT",
+    "private": true,
+    "scripts": {},
+    "devDependencies": {
+        "@radix-ui/themes": "^3.1.6",
+        "prettier": "^3.4.1"
+    },
+    "engines": {
+        "node": ">=20"
+    }
+}
