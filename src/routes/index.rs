@@ -48,19 +48,19 @@ pub fn Index() -> Html {
                     </Text>
 
                     <Flex gap=2 wrap={FlexWrap::Wrap}>
-                        <LinkButton size=3 href="https://github.com/RustForWeb">
+                        <LinkButton size=3 href="https://github.com/RustForWeb" rel="me">
                             {"GitHub"}
                         </LinkButton>
-                        <LinkButton size=3 href="https://discord.gg/nzbN54K2Gr">
+                        <LinkButton size=3 href="https://discord.gg/nzbN54K2Gr" rel="me">
                             {"Discord"}
                         </LinkButton>
-                        <LinkButton size=3 href="https://mastodon.social/@RustForWeb">
+                        <LinkButton size=3 href="https://mastodon.social/@RustForWeb" rel="me">
                             {"Mastodon"}
                         </LinkButton>
-                        <LinkButton size=3 href="https://bsky.app/profile/rustforweb.bsky.social">
+                        <LinkButton size=3 href="https://bsky.app/profile/rustforweb.bsky.social" rel="me">
                             {"Bluesky"}
                         </LinkButton>
-                        <LinkButton size=3 href="https://x.com/RustForWeb">
+                        <LinkButton size=3 href="https://x.com/RustForWeb" rel="me">
                             {"X"}
                         </LinkButton>
                     </Flex>
