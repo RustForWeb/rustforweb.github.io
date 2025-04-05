@@ -4,7 +4,7 @@ description = "Rust For Web website."
 publish = false
 
 authors = ["Rust For Web <info@rustforweb.org>"]
-edition = "2021"
+edition = "2024"
 license = "MIT"
 repository = "https://github.com/RustForWeb/rustforweb.github.io"
 
