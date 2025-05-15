@@ -26,7 +26,7 @@ pub fn Index() -> Html {
                     ])}
                     mb=4
                 >
-                    {"Rust For Web"}
+                    {"Rust for Web"}
                 </Heading>
                 <Heading
                     size=7
@@ -38,12 +38,12 @@ pub fn Index() -> Html {
 
                 <Card>
                     <Text r#as={TextAs::P} size=5 mb=2>
-                        {"Rust For Web is a collection of libraries designed for building web applications with Rust and WebAssembly. "}
+                        {"Rust for Web is a collection of libraries designed for building web applications with Rust and WebAssembly. "}
                         {"These libraries provide ready-to-use components for popular Rust web frameworks such as "}
                         <Link href="https://dioxuslabs.com/">{"Dioxus"}</Link>{", "}
                         <Link href="https://leptos.dev/">{"Leptos"}</Link>{", and "}
                         <Link href="https://yew.rs/">{"Yew"}</Link>{". "}
-                        {"Rust For Web is inspired by the rich ecosystems of JavaScript frameworks like React and aims to bring the same ease of use to the Rust web ecosystem.
+                        {"Rust for Web is inspired by the rich ecosystems of JavaScript frameworks like React and aims to bring the same ease of use to the Rust web ecosystem.
                         It achieves this by leveraging the strengths of existing JavaScript component libraries and porting their functionality to Rust."}
                     </Text>
 
