@@ -1,9 +1,9 @@
 [package]
 name = "rustforweb-website"
-description = "Rust For Web website."
+description = "Rust for Web website."
 publish = false
 
-authors = ["Rust For Web <info@rustforweb.org>"]
+authors = ["Rust for Web <info@rustforweb.org>"]
 edition = "2024"
 license = "MIT"
 repository = "https://github.com/RustForWeb/rustforweb.github.io"

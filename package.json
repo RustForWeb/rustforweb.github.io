@@ -1,7 +1,7 @@
 {
     "name": "@rustforweb/website",
-    "description": "Rust For Web website.",
-    "author": "Rust For Web <info@rustforweb.org>",
+    "description": "Rust for Web website.",
+    "author": "Rust for Web <info@rustforweb.org>",
     "repository": "github:RustForWeb/rustforweb.github.io",
     "license": "MIT",
     "private": true,
