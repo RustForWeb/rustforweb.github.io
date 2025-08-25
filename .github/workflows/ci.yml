@@ -34,7 +34,7 @@ jobs:
               run: cargo binstall -y --force cargo-deny cargo-machete cargo-sort
 
             - name: Lint
-              run: cargo clippy --locked
+              run: cargo clippy --all-features --locked
 
             - name: Check dependencies
               run: cargo deny check
