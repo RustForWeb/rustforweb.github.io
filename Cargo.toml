@@ -12,7 +12,7 @@ repository = "https://github.com/RustForWeb/rustforweb.github.io"
 console_error_panic_hook = "0.1.7"
 console_log = "1.0.0"
 log = "0.4.22"
-radix-yew-icons = { git = "https://github.com/RustForWeb/radix.git" }
+# radix-yew-icons = { git = "https://github.com/RustForWeb/radix.git" }
 radix-yew-themes = { git = "https://github.com/RustForWeb/radix.git" }
 yew = { version = "0.21.0", features = ["csr"] }
 yew-router = "0.18.0"
