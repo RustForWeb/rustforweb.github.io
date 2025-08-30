@@ -33,7 +33,7 @@ pub fn Index() -> Html {
                     r#as={HeadingAs::H2}
                     mb=4
                 >
-                        {"Creates and ports web UI libraries for Rust."}
+                        {"Creates and ports web libraries for Rust."}
                 </Heading>
 
                 <Card>

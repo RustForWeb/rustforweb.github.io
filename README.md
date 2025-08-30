@@ -6,7 +6,7 @@
 
 <h1 align="center">Rust for Web</h1>
 
-Creates and ports web UI libraries for Rust.
+Creates and ports web libraries for Rust.
 
 Rust for Web is a collection of libraries designed for building web applications with Rust and WebAssembly. These libraries provide ready-to-use components for popular Rust web frameworks such as [Dioxus](https://dioxuslabs.com/), [Leptos](https://leptos.dev/), and [Yew](https://yew.rs/). Rust for Web is inspired by the rich ecosystems of JavaScript frameworks like React and aims to bring the same ease of use to the Rust web ecosystem. It achieves this by leveraging the strengths of existing JavaScript component libraries and porting their functionality to Rust.
 
