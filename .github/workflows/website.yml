@@ -1,4 +1,5 @@
 name: Website
+
 on:
     pull_request: {}
     push:
@@ -7,76 +8,14 @@ on:
 
 permissions:
     contents: read
+    id-token: write
+    pages: write
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: false
 
 jobs:
-    website-build:
-        name: Build Website
-        runs-on: ubuntu-latest
-
-        steps:
-            - uses: actions/checkout@v6
-              with:
-                  fetch-depth: 0
-
-            - name: Set up Rust toolchain
-              uses: actions-rust-lang/setup-rust-toolchain@v1
-              with:
-                  target: wasm32-unknown-unknown
-
-            - name: Install Cargo Binary Install
-              uses: cargo-bins/cargo-binstall@main
-
-            - name: Install Trunk
-              run: cargo binstall --force -y trunk
-
-            - name: Install Node.js dependencies
-              run: npm ci
-
-            - name: Build Website
-              run: trunk build
-
-            - name: Upload artifact
-              uses: actions/upload-artifact@v7
-              with:
-                  name: website
-                  path: dist
-                  retention-days: 1
-                  if-no-files-found: error
-
-    deploy:
-        name: Deploy
-        needs: website-build
-        if: github.ref == 'refs/heads/main'
-        runs-on: ubuntu-latest
-
-        permissions:
-            contents: read
-            pages: write
-            id-token: write
-
-        steps:
-            - uses: actions/checkout@v6
-              with:
-                  fetch-depth: 0
-
-            - name: Download artifacts
-              uses: actions/download-artifact@v8
-              with:
-                  path: dist
-                  merge-multiple: true
-
-            - name: Setup Pages
-              uses: actions/configure-pages@v6
-
-            - name: Upload artifact
-              uses: actions/upload-pages-artifact@v5
-              with:
-                  path: dist
-
-            - name: Deploy to GitHub Pages
-              id: deployment
-              uses: actions/deploy-pages@v5
+    trunk:
+        name: Trunk
+        uses: RustForWeb/.github/.github/workflows/trunk.yml@94e5af76a27a4691153fae17ed42eb08677f8d3f
