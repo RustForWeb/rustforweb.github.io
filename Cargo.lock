@@ -124,7 +124,7 @@ checksum = "a725e4d13b0ecaa0fc06d7d5d91e1dc12775028182d19d7071c7b94646164e32"
 dependencies = [
  "floating-ui-dom",
  "web-sys",
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -371,7 +371,7 @@ dependencies = [
  "serde",
  "serde-wasm-bindgen 0.5.0",
  "serde_urlencoded",
- "thiserror",
+ "thiserror 1.0.69",
  "wasm-bindgen",
  "web-sys",
 ]
@@ -388,7 +388,7 @@ dependencies = [
  "serde",
  "serde-wasm-bindgen 0.6.5",
  "serde_urlencoded",
- "thiserror",
+ "thiserror 1.0.69",
  "wasm-bindgen",
  "web-sys",
 ]
@@ -408,7 +408,7 @@ dependencies = [
  "pin-project",
  "serde",
  "serde_json",
- "thiserror",
+ "thiserror 1.0.69",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
@@ -429,7 +429,7 @@ dependencies = [
  "pin-project",
  "serde",
  "serde_json",
- "thiserror",
+ "thiserror 1.0.69",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
@@ -465,7 +465,7 @@ dependencies = [
  "js-sys",
  "serde",
  "serde_json",
- "thiserror",
+ "thiserror 1.0.69",
  "wasm-bindgen",
  "web-sys",
 ]
@@ -480,7 +480,7 @@ dependencies = [
  "js-sys",
  "serde",
  "serde_json",
- "thiserror",
+ "thiserror 1.0.69",
  "wasm-bindgen",
  "web-sys",
 ]
@@ -563,7 +563,7 @@ dependencies = [
  "js-sys",
  "pinned",
  "serde",
- "thiserror",
+ "thiserror 1.0.69",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
@@ -609,6 +609,16 @@ name = "implicit-clone"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "88e4c5423e5b38b6f175b42561a08f6ddbc8ed3a3275f48eb350ba2dfe9a6b60"
+dependencies = [
+ "implicit-clone-derive",
+ "indexmap",
+]
+
+[[package]]
+name = "implicit-clone"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1689b939ee35e3a075b0834b5672efd43aec8a6e81a1c6002b76a5ca2f211ae0"
 dependencies = [
  "implicit-clone-derive",
  "indexmap",
@@ -734,7 +744,7 @@ checksum = "a829027bd95e54cfe13e3e258a1ae7b645960553fb82b75ff852c29688ee595b"
 dependencies = [
  "futures",
  "rustversion",
- "thiserror",
+ "thiserror 1.0.69",
 ]
 
 [[package]]
@@ -835,7 +845,7 @@ name = "radix-yew-arrow"
 version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -845,7 +855,7 @@ name = "radix-yew-aspect-ratio"
 version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -856,7 +866,7 @@ version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
  "web-sys",
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -872,7 +882,7 @@ dependencies = [
  "radix-yew-use-previous",
  "radix-yew-use-size",
  "web-sys",
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -884,7 +894,7 @@ source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c5004634
 dependencies = [
  "nanoid",
  "web-sys",
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -892,7 +902,7 @@ name = "radix-yew-direction"
 version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -901,7 +911,7 @@ version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
  "web-sys",
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -911,7 +921,7 @@ source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c5004634
 dependencies = [
  "once_cell",
  "web-sys",
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -921,7 +931,7 @@ name = "radix-yew-id"
 version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -935,7 +945,7 @@ dependencies = [
  "serde",
  "serde_json",
  "web-sys",
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -946,7 +956,7 @@ version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
  "web-sys",
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -957,7 +967,7 @@ version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
  "web-sys",
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -965,7 +975,7 @@ name = "radix-yew-primitive"
 version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -985,7 +995,7 @@ dependencies = [
  "radix-yew-use-controllable-state",
  "radix-yew-visually-hidden",
  "web-sys",
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -995,7 +1005,7 @@ name = "radix-yew-separator"
 version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -1010,7 +1020,7 @@ dependencies = [
  "radix-yew-use-previous",
  "radix-yew-use-size",
  "web-sys",
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -1034,7 +1044,7 @@ dependencies = [
  "radix-yew-use-controllable-state",
  "radix-yew-visually-hidden",
  "web-sys",
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -1052,7 +1062,7 @@ dependencies = [
  "radix-yew-use-controllable-state",
  "radix-yew-visually-hidden",
  "web-sys",
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -1062,7 +1072,7 @@ name = "radix-yew-use-controllable-state"
 version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -1070,7 +1080,7 @@ name = "radix-yew-use-previous"
 version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -1079,7 +1089,7 @@ version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
  "web-sys",
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -1087,7 +1097,7 @@ name = "radix-yew-visually-hidden"
 version = "0.0.2"
 source = "git+https://github.com/RustForWeb/radix.git#c094f3823ecc731ca9c50046349a7ecb0d565aa4"
 dependencies = [
- "yew",
+ "yew 0.21.0",
  "yew-struct-component",
  "yew-style",
 ]
@@ -1136,7 +1146,7 @@ dependencies = [
  "console_log",
  "log",
  "radix-yew-themes",
- "yew",
+ "yew 0.23.0",
  "yew-router",
  "yew-struct-component",
  "yew-style",
@@ -1275,7 +1285,16 @@ version = "1.0.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b6aaf5339b578ea85b50e080feb250a3e8ae8cfcdff9a461c9ec2904bc923f52"
 dependencies = [
- "thiserror-impl",
+ "thiserror-impl 1.0.69",
+]
+
+[[package]]
+name = "thiserror"
+version = "2.0.21"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "09e52cb86a36cede5cb101bf8908837b3e4c6e5e59fe7fd85c23fb56200d189e"
+dependencies = [
+ "thiserror-impl 2.0.21",
 ]
 
 [[package]]
@@ -1290,12 +1309,35 @@ dependencies = [
 ]
 
 [[package]]
+name = "thiserror-impl"
+version = "2.0.21"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fe5197923287db20a58125f0bc85c062f7f2c892de97b18c356f9efb14b28524"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 3.0.6",
+]
+
+[[package]]
 name = "tokio"
 version = "1.53.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e95f91fcc7a621e8b030f6aa23c71fe9838ae2fb4d8118b75602a328f5144044"
 dependencies = [
  "pin-project-lite",
+ "tokio-macros",
+]
+
+[[package]]
+name = "tokio-macros"
+version = "2.7.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "78773a2a397f451582ce068015985c33193cf6dea8b74d2a639fe457b2f07b0e"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 3.0.6",
 ]
 
 [[package]]
@@ -1307,6 +1349,23 @@ dependencies = [
  "futures-core",
  "pin-project-lite",
  "tokio",
+]
+
+[[package]]
+name = "tokise"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ba44a1b36f42a95bd21b5e4acc1468547f75a73e7cf619312408d1f74c7fb687"
+dependencies = [
+ "futures",
+ "gloo 0.11.0",
+ "num_cpus",
+ "once_cell",
+ "pin-project",
+ "pinned",
+ "tokio",
+ "tokio-stream",
+ "wasm-bindgen-futures",
 ]
 
 [[package]]
@@ -1464,20 +1523,45 @@ dependencies = [
  "console_error_panic_hook",
  "futures",
  "gloo 0.11.0",
- "implicit-clone",
+ "implicit-clone 0.5.1",
  "indexmap",
  "js-sys",
  "prokio",
  "rustversion",
  "serde",
  "slab",
- "thiserror",
+ "thiserror 1.0.69",
  "tokio",
  "tracing",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
- "yew-macro",
+ "yew-macro 0.21.0",
+]
+
+[[package]]
+name = "yew"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2c154fadfa97eabdd3f3b79345ceeb9c05ee8f13f76d3d881d17fba618bf558d"
+dependencies = [
+ "console_error_panic_hook",
+ "futures",
+ "gloo 0.11.0",
+ "implicit-clone 0.6.0",
+ "indexmap",
+ "js-sys",
+ "rustversion",
+ "serde",
+ "slab",
+ "thiserror 2.0.21",
+ "tokio",
+ "tokise",
+ "tracing",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+ "web-sys",
+ "yew-macro 0.23.0",
 ]
 
 [[package]]
@@ -1494,9 +1578,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "yew-macro"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c08b883d84a035f57519d057f65a2a07ae25f1884ad485e1a9a523c9d880c1ad"
+dependencies = [
+ "prettyplease",
+ "proc-macro-error",
+ "proc-macro2",
+ "quote",
+ "rustversion",
+ "syn 2.0.119",
+]
+
+[[package]]
 name = "yew-router"
-version = "0.18.0"
-source = "git+https://github.com/RustForWeb/yew.git?branch=feature%2Fuse-composed-ref#5e69003a25fb1cc8692f9ead409cd903f3f9074a"
+version = "0.20.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "870bd2a1aa6d608c0c789c122654e25f4927bb6bfe344cc0da3b630ac3c73260"
 dependencies = [
  "gloo 0.11.0",
  "js-sys",
@@ -1507,14 +1606,15 @@ dependencies = [
  "urlencoding",
  "wasm-bindgen",
  "web-sys",
- "yew",
+ "yew 0.23.0",
  "yew-router-macro",
 ]
 
 [[package]]
 name = "yew-router-macro"
-version = "0.18.0"
-source = "git+https://github.com/RustForWeb/yew.git?branch=feature%2Fuse-composed-ref#5e69003a25fb1cc8692f9ead409cd903f3f9074a"
+version = "0.20.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8399f1d134ab8e69abc7cded19f114621d520bd9c79c5a0f34091bf664d7325b"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1527,7 +1627,7 @@ version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "63ce6143f947bb3a787e910d6ef1337d6b118a60668f99a61e4c901e27876197"
 dependencies = [
- "yew",
+ "yew 0.21.0",
  "yew-struct-component-macro",
 ]
 
@@ -1549,7 +1649,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7c0d63ea26105cb01dee79a03615cb2e2cfcc517d1828e7fe268478495e3681b"
 dependencies = [
  "indexmap",
- "yew",
+ "yew 0.21.0",
 ]
 
 [[package]]
@@ -1577,3 +1677,8 @@ name = "zmij"
 version = "1.0.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
+
+[[patch.unused]]
+name = "yew-router"
+version = "0.18.0"
+source = "git+https://github.com/RustForWeb/yew.git?branch=feature%2Fuse-composed-ref#5e69003a25fb1cc8692f9ead409cd903f3f9074a"
